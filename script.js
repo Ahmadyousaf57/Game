@@ -42,12 +42,12 @@ const playgame = (userchoiceid, msg, userscorediv, computerscorediv) => {
     }
 
     if (userwin) {
-        msg.innerText = "You win!";
+        msg.innerText = `You win! ${userchoiceid} beats ${computerchoice}`;
         msg.style.backgroundColor = "green";
         userscore++;
         userscorediv.innerText = userscore;
     } else {
-        msg.innerText = "You lose!";
+        msg.innerText = `You lose! ${computerchoice} beats ${userchoiceid}`;
         msg.style.backgroundColor = "red";
         computerscore++;
         computerscorediv.innerText = computerscore;
